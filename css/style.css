@@ -546,15 +546,24 @@ button { cursor: pointer; }
 .facts-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  gap: 0;
+}
+
+.fact {
+  padding-right: 32px;
 }
 
 .fact small {
   color: var(--orange);
   letter-spacing: 0.12em;
+  margin-bottom: 8px;
 }
 
-.fact strong { color: var(--green-dark); }
+.fact strong {
+  display: block;
+  color: var(--green-dark);
+  line-height: 1.35;
+}
 
 .editorial-section { padding: 82px 0; }
 
