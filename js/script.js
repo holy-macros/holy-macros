@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  // Always start at the top unless the URL intentionally contains an anchor.
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+
+  if (!window.location.hash) {
+    window.scrollTo(0, 0);
+  }
   const year = document.querySelectorAll("[data-current-year]");
   year.forEach(el => el.textContent = new Date().getFullYear());
 
