@@ -782,7 +782,59 @@ button { cursor: pointer; }
   .facts-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) {.recipe-hero {
+  padding: 28px 0 52px;
+}
+
+.recipe-hero-grid {
+  gap: 28px;
+}
+
+.recipe-intro {
+  margin-top: 18px;
+}
+
+.recipe-meta-grid {
+  margin-top: 22px;
+  padding-top: 18px;
+  gap: 14px;
+}
+
+.macro-card {
+  margin-top: 22px;
+  padding: 20px 0;
+}
+
+.recipe-tools {
+  margin-top: 18px;
+  gap: 8px;
+}
+
+.recipe-tool {
+  min-height: 42px;
+  padding: 0 14px;
+  font-size: 0.66rem;
+}
+
+.recipe-facts {
+  padding: 40px 0;
+}
+
+.editorial-section {
+  padding: 58px 0;
+}
+
+.recipe-content {
+  padding: 64px 0 72px;
+}
+
+.nutrition-section {
+  padding: 64px 0;
+}
+
+.more-recipes {
+  padding: 64px 0;
+}
   .container { width: min(calc(100% - 28px), var(--content)); }
   .home-hero { padding: 48px 0 76px; }
   .home-hero h1 { font-size: clamp(3.6rem, 17vw, 5rem); }
