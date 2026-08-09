@@ -306,7 +306,15 @@ button { cursor: pointer; }
 
 .recipe-preview:nth-child(even) .preview-photo { order: 2; }
 
-.preview-photo { min-height: 445px; }
+.preview-photo {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 24px;
+  overflow: hidden;
+  display: block;
+  flex-shrink: 0;
+}
 
 .recipe-meta-line {
   margin: 0 0 12px;
