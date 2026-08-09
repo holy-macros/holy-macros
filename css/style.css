@@ -813,6 +813,13 @@ button { cursor: pointer; }
   stroke-linejoin: round;
 }
 
+.social-icon-image {
+  width: 18px;
+  height: 18px;
+  display: block;
+  object-fit: contain;
+}
+
 .social-link:hover,
 .social-link:focus-visible {
   background: var(--green-dark);
